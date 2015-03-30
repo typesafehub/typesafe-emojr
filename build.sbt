@@ -8,6 +8,7 @@ scalaVersion := "2.11.6"
 
 libraryDependencies ++= Seq(
   "com.typesafe" %% "emoji" % "1.0.0",
+  "com.netaporter" %% "scala-uri" % "0.4.6",
   "com.adrianhurt" %% "play-bootstrap3" % "0.4"
 )
 
