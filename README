@@ -1,0 +1,12 @@
+Typesafe Emojr
+=================================
+
+This is an Activator template that shows how to use Emoji in your application.
+
+Emoji are graphical images, popularized in Japan and now becoming an essential part of online communication.
+
+Many emoji are mapped to Unicode code points and so can be used in logging and in HTML.  However, because they defined internally as Integers, they are unknown to most developers.
+
+Emojr solves this problem by defining an easy conversion between String "short codes" and Emoji.  Running this application shows the short codes in alphabetical order and their associated emoji.
+
+Now, you can harness the true power of social media.

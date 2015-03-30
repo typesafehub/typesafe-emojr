@@ -1,0 +1,26 @@
+@(shortCode: String)(implicit codes: com.typesafe.emoji.ShortCodes)
+
+@defining(shortCode.emoji) { emoji: com.typesafe.emoji.Emoji =>
+  <tr>
+    <td>
+      @shortCode
+    </td>
+
+    <td>
+      @emoji.name
+    </td>
+
+    <td>
+      @emoji.hex
+    </td>
+
+    <td>
+      @emoji.toString
+    </td>
+
+    <td>
+      @{emoji.shortCodes.map(_.mkString(",")) ?: "No short codes defined"}
+    </td>
+
+  </tr>
+}

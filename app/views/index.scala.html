@@ -1,0 +1,26 @@
+@(message: String)(implicit codes:com.typesafe.emoji.ShortCodes)
+
+@main("Welcome to Typesafe Emojr") {
+
+  <div class="header">
+    <h1 class="header-title">@message</h1>
+    <p class="lead">Serving your REST API with a smiley face.</p>
+  </div>
+
+  <table class="table table-striped">
+    <thead>
+      <td>Short Code</td>
+      <td>Description</td>
+      <td>Hexidecimal</td>
+      <td>Unicode</td>
+      <td>Aliases</td>
+    </thead>
+    <tbody>
+      @for(shortCode <- codes.shortCodes.toList.sortWith(_.toLowerCase < _.toLowerCase)) {
+        @row(shortCode)
+      }
+    </tbody>
+  </table>
+
+
+}
